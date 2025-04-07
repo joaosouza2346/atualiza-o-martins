@@ -1,0 +1,179 @@
+/* Reseta o estilo padrão do navegador */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   color: #333;
+   text-align: center;
+ }
+ 
+ header {
+   background-color: #702826;
+   color: white;
+   text-align: center;
+   padding: 1rem;
+ }
+ 
+ h1 {
+   font-size: 2.5rem;
+ }
+ 
+ main {
+   padding: 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ section {
+   margin-bottom: 2rem;
+ }
+ 
+ form {
+   background-color: white;
+   padding: 2rem;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ fieldset {
+   border: none;
+   margin-bottom: 1rem;
+ }
+ 
+ legend {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+ }
+ 
+ label {
+   display: block;
+   margin: 0.5rem 0 0.2rem;
+ }
+ 
+ input,
+ select,
+ button {
+   width: 100%;
+   padding: 0.8rem;
+   margin-bottom: 1rem;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+ }
+ 
+ button {
+   background-color: #702826;
+   color: white;
+   cursor:auto;
+   transition: background-color 2.3s;
+ }
+ 
+ button:hover {
+   background-color: #fff;
+ }
+ 
+ .response-message-section {
+   margin-top: 1rem;
+ }
+ 
+ .response-message {
+   padding: 1rem;
+   background-color: #dff0d8;
+   color: #3c763d;
+   border-radius: 5px;
+   display: none;
+ }
+ 
+ table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 2rem;
+   background-color: white;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ th, td {
+   padding: 1rem;
+   text-align: left;
+ }
+ 
+ th {
+   background-color: #702826;
+   color: white;
+ }
+ 
+ tr:nth-child(even) {
+   background-color: #f9f9f9;
+ }
+ 
+ @media (max-width: 768px) {
+   header h1 {
+       font-size: 2rem;
+   }
+ 
+   form {
+       padding: 1.5rem;
+   }
+ 
+   label {
+       font-size: 0.9rem;
+   }
+ 
+   input, select, button {
+       font-size: 1rem;
+       padding: 0.6rem;
+   }
+ 
+   table {
+       font-size: 0.9rem;
+   }
+ 
+   th, td {
+       padding: 0.8rem;
+   }
+ }
+ 
+ @media (max-width: 480px) {
+   header h1 {
+       font-size: 1.5rem;
+   }
+ 
+   form {
+       padding: 1rem;
+   }
+ 
+   input, select, button {
+       font-size: 0.9rem;
+       padding: 0.5rem;
+   }
+ 
+   table {
+       font-size: 0.8rem;
+   }
+ 
+   th, td {
+       padding: 0.6rem;
+   }
+ 
+   button {
+       font-size: 1rem;
+   }
+ }
+ .excluir-btn {
+   background-color: #e74c3c;
+   color: white;
+   border: none;
+   padding: 5px 10px;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+ 
+ .excluir-btn:hover {
+   background-color: #c0392b;
+ }

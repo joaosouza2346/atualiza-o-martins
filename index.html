@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoas - MPRJ</title>
+    <link rel="shortcut icon" href="mprj_logo.ico"image="/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images.jfif" alt="logo do mprj">
+        <h1>Cadastro  e controle de entrada e saída de pessoas - MPRJ</h1>
+    </header>
+
+    <!-- Seção para o formulário de cadastro -->
+    <main>
+        <section>
+            <form id="cadastroForm" aria-labelledby="formulario-cadastro">
+                <fieldset>
+                    <legend id="formulario-cadastro">Dados Pessoais</legend>
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required>
+
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" required>
+
+                    <label for="tipo">Tipo de Pessoa:</label>
+                    <select id="tipo" required>
+                     <option value="EStagiário">Estagiário</option>
+                        tagiário</option>
+                        <option value="Funcionario">Funcionário</option>
+                        <option value="Entregador">Entregador</option>
+                        <option value="Policia">Polícia</option>
+                        <option value="Promotor de Justiça">Promotor de Justiça</option>
+                        <option value="Visitante">Visitante</option>
+                    </select>
+
+                    <label for="orgao">Órgão:</label>
+                    <select id="orgao" required>
+                        <option value="ACC">ACC</option>
+                        <option value="ASI">ASI</option>
+                        <option value="ATI">ATI</option>
+                        <option value="COORDENAÇÃO">COORDENAÇÃO</option>
+                        <option value="DCDA">DCDA</option>
+                        <option value="DEDIT">DEDIT</option>
+                        <option value="DEIC">DEIC</option>
+                        <option VAlue="DLAB">DLAB</option>
+                         <option value="DINT">DINT</option>
+                         <option value="DSI">DSI</option>
+                      
+         
+                  
+                    </select>
+
+                    <label for="andar">Andar:</label>
+                    <select id="andar" required>
+                       
+                        <option value="5">Andar 5</option>
+                        <option value="6">Andar 6</option> <!-- Novo andar 6 -->
+                        <option value="8">Andar 8 do navega</option> <!-- Novo andar 8 -->
+                    </select>
+
+                    <label for="responsavel">Responsável:</label>
+                    <input type="text" id="responsavel" required>
+
+                    <label for="entrada">Data e Hora de Entrada:</label>
+                    <input type="datetime-local" id="entrada" required>
+
+                    <label for="saida">Data e Hora de Saída:</label>
+                    <input type="datetime-local" id="saida" required>
+
+                </fieldset>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <!-- Mensagem de sucesso ou erro -->
+            <section class="response-message-section">
+                <div class="response-message" id="responseMessage"></div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Relatório de cadastros -->
+    <section>
+        <h2>Relatório de Cadastros entrada e controle de pessoas - MPRJ</h2>
+        <table id="relatorioTabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Tipo</th>
+                    <th>Órgão</th>
+                    <th>Andar</th>
+                    <th>Responsável</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Ações</th> <!-- nova coluna -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Tabela será preenchida com os cadastros -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>© 2025 MPRJ - Todos os direitos reservados - AV.General justos 375 centro RJ Brasil- CEP: 20020-080  </p>  
+      
+      
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
